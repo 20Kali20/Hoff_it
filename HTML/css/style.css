@@ -1,0 +1,191 @@
+i 
+{
+    font-style: normal;
+}
+/*nagłówek*/
+.headline::before
+{
+    content: "";
+    background-image: url("../images/school.jpg");
+    opacity: 0.5;
+    background-color: rgb(240, 235, 233);
+    /*palaraxa*/
+    max-height: 200;
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /**/
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.headline
+{
+    position: relative;
+}
+
+.text
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 10vw;
+    font-family: 'Courier New', 'Courier', 'monospace';    
+    opacity: 1;
+    text-shadow: 5px 5px #A2B29F;
+}
+
+/*Pasek zakładek/menu*/
+a.nav-link
+{
+    color: rgb(0, 0, 0)!important;
+}
+
+ul.nav-pills
+{
+    background-color: rgb(240, 235, 233);
+    border-radius: 0%;
+}
+
+a.nav-link.active 
+{
+    background-color: #798777 !important;
+    border-radius: 0%;
+}
+
+ul.nav-pills :hover
+{
+    background-color: #A2B29F;
+    border-radius: 0%;
+}
+/*social media*/
+.btn-circle
+{    
+    width: 3rem;
+    height: 3rem;
+    padding: 7px 0px;
+    border-radius: 50%;
+    text-align: center;
+    border: 0;
+}
+
+.icon-bar 
+{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* a.btn-circle :hover
+{
+    background-color: aqua !important;
+} */
+
+
+.list-group
+{
+    border-radius: 0%;
+}
+
+/* img
+{
+    width: 130vw;
+} */
+
+img
+{
+    overflow: hidden;
+    padding: 0;
+}
+
+img 
+{
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+}
+img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    z-index: 0;
+}
+
+.count
+{
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text_head
+{
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*aktualności - design*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #798777;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.data{
+    float: right;
+    color:#A2B29F;
+}
+/*przyciski od formularza*/
+.button{
+    color: #ffffff;
+	background-color: #798777;
+	font-size: 15px;
+	border: 1px solid #798777;
+	padding: 10px 30px;
+	cursor: pointer
+}
+.button:hover{
+    color: #798777;
+    background-color: #ffffff;
+}
+/*rekrutacja - design*/
+.fl{
+    border-bottom: 3px solid #798777;
+}
+.fl::first-letter{
+    font-size: 120%;
+    color: #798777;
+}
